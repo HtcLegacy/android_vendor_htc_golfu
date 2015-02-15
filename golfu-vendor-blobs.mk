@@ -1,6 +1,6 @@
 # Camera
 PRODUCT_COPY_FILES += \
-    vendor/htc/golfu/proprietary/lib/hw/camera.vendor.msm7x27a.so:system/lib/hw/camera.vendor.msm7x27a.so \
+    vendor/htc/golfu/proprietary/lib/hw/camera.msm7x27a.so:system/lib/hw/camera.msm7x27a.so \
     vendor/htc/golfu/proprietary/lib/liboemcamera.so:system/lib/liboemcamera.so \
     vendor/htc/golfu/proprietary/lib/libmmipl.so:system/lib/libmmipl.so \
     vendor/htc/golfu/proprietary/lib/libmmjpeg.so:system/lib/libmmjpeg.so \
@@ -15,7 +15,7 @@ PRODUCT_COPY_FILES += \
     vendor/htc/golfu/proprietary/bin/mm-qcamera-daemon:system/bin/mm-qcamera-daemon
 
 # OMX
-#PRODUCT_COPY_FILES += \
+PRODUCT_COPY_FILES += \
     vendor/htc/golfu/proprietary/lib/libmm-adspsvc.so:system/lib/libmm-adspsvc.so \
     vendor/htc/golfu/proprietary/lib/libmmosal.so:system/lib/libmmosal.so \
     vendor/htc/golfu/proprietary/lib/libmmparser.so:system/lib/libmmparser.so \
@@ -105,8 +105,6 @@ PRODUCT_COPY_FILES += \
     vendor/htc/golfu/proprietary/lib/libqdp.so:system/lib/libqdp.so \
     vendor/htc/golfu/proprietary/lib/libqmi.so:system/lib/libqmi.so \
     vendor/htc/golfu/proprietary/lib/libqmiservices.so:system/lib/libqmiservices.so
-    #vendor/htc/golfu/proprietary/lib/libnv.so:system/lib/libnv.so \
-    #vendor/htc/golfu/proprietary/lib/liboncrpc.so:system/lib/liboncrpc.so \
 
 # Bluetooth
 PRODUCT_COPY_FILES += \
