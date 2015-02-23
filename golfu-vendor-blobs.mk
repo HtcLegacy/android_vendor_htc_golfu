@@ -62,7 +62,9 @@ PRODUCT_COPY_FILES += \
 # Audio
 PRODUCT_COPY_FILES += \
     vendor/htc/golfu/proprietary/lib/libaudioeq.so:system/lib/libaudioeq.so \
-    vendor/htc/golfu/proprietary/lib/libhtc_acoustic.so:system/lib/libhtc_acoustic.so
+    vendor/htc/golfu/proprietary/lib/libhtc_acoustic.so:system/lib/libhtc_acoustic.so \
+    vendor/htc/golfu/proprietary/lib/libaudcal.so:obj/lib/libaudcal.so \
+    vendor/htc/golfu/proprietary/lib/libaudcal.so:system/lib/libaudcal.so
 
 # Sensors
 PRODUCT_COPY_FILES += \
