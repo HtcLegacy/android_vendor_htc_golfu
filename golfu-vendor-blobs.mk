@@ -19,13 +19,8 @@ PRODUCT_COPY_FILES += \
     vendor/htc/golfu/proprietary/lib/libmm-adspsvc.so:system/lib/libmm-adspsvc.so \
     vendor/htc/golfu/proprietary/lib/libmmosal.so:system/lib/libmmosal.so \
     vendor/htc/golfu/proprietary/lib/libmmparser.so:system/lib/libmmparser.so \
-    vendor/htc/golfu/proprietary/omx/libOmxH264Dec.so:system/lib/libOmxH264Dec.so \
-    vendor/htc/golfu/proprietary/omx/libOmxMpeg4Dec.so:system/lib/libOmxMpeg4Dec.so \
-    vendor/htc/golfu/proprietary/omx/libOmxVidEnc.so:system/lib/libOmxVidEnc.so \
-    vendor/htc/golfu/proprietary/lib/libmmparser_divxdrmlib.so:system/lib/libmmparser_divxdrmlib.so \
-    vendor/htc/golfu/proprietary/lib/libdivxdrmdecrypt.so:system/lib/libdivxdrmdecrypt.so \
+    vendor/htc/golfu/proprietary/omx/libI420colorconvert.so:system/lib/libI420colorconvert.so \
     vendor/htc/golfu/proprietary/omx/libOmxAacDec.so:system/lib/libOmxAacDec.so \
-    vendor/htc/golfu/proprietary/omx/libOmxAacEnc.so:system/lib/libOmxAacEnc.so \
     vendor/htc/golfu/proprietary/omx/libOmxAc3HwDec.so:system/lib/libOmxAc3HwDec.so \
     vendor/htc/golfu/proprietary/omx/libOmxAdpcmDec.so:system/lib/libOmxAdpcmDec.so \
     vendor/htc/golfu/proprietary/omx/libOmxAmrDec.so:system/lib/libOmxAmrDec.so \
@@ -35,11 +30,17 @@ PRODUCT_COPY_FILES += \
     vendor/htc/golfu/proprietary/omx/libOmxEvrcDec.so:system/lib/libOmxEvrcDec.so \
     vendor/htc/golfu/proprietary/omx/libOmxEvrcEnc.so:system/lib/libOmxEvrcEnc.so \
     vendor/htc/golfu/proprietary/omx/libOmxEvrcHwDec.so:system/lib/libOmxEvrcHwDec.so \
-    vendor/htc/golfu/proprietary/omx/libOmxMp3Dec.so:system/lib/libOmxMp3Dec.so \
+    vendor/htc/golfu/proprietary/omx/libOmxH264Dec.so:system/lib/libOmxH264Dec.so \
+    vendor/htc/golfu/proprietary/omx/libOmxMpeg4Dec.so:system/lib/libOmxMpeg4Dec.so \
+    vendor/htc/golfu/proprietary/omx/libOmxOn2Dec.so:system/lib/libOmxOn2Dec.so \
     vendor/htc/golfu/proprietary/omx/libOmxQcelp13Dec.so:system/lib/libOmxQcelp13Dec.so \
     vendor/htc/golfu/proprietary/omx/libOmxQcelp13Enc.so:system/lib/libOmxQcelp13Enc.so \
     vendor/htc/golfu/proprietary/omx/libOmxQcelpHwDec.so:system/lib/libOmxQcelpHwDec.so \
-    vendor/htc/golfu/proprietary/omx/libOmxWmaDec.so:system/lib/libOmxWmaDec.so
+    vendor/htc/golfu/proprietary/omx/libOmxrv9Dec.so:system/lib/libOmxrv9Dec.so \
+    vendor/htc/golfu/proprietary/omx/libOmxVidEnc.so:system/lib/libOmxVidEnc.so \
+    vendor/htc/golfu/proprietary/omx/libOmxVp8Dec.so:system/lib/libOmxVp8Dec.so \
+    vendor/htc/golfu/proprietary/omx/libOmxWmaDec.so:system/lib/libOmxWmaDec.so \
+    vendor/htc/golfu/proprietary/omx/libOmxWmvDec.so:system/lib/libOmxWmvDec.so
 
 # DRM Plugin
 PRODUCT_COPY_FILES += \
@@ -74,20 +75,19 @@ PRODUCT_COPY_FILES += \
     vendor/htc/golfu/proprietary/etc/firmware/yamato_pm4.fw:system/etc/firmware/yamato_pm4.fw \
     vendor/htc/golfu/proprietary/etc/firmware/leia_pfp_470.fw:system/etc/firmware/leia_pfp_470.fw \
     vendor/htc/golfu/proprietary/etc/firmware/leia_pm4_470.fw:system/etc/firmware/leia_pm4_470.fw \
-    vendor/htc/golfu/proprietary/lib/libgsl.so:system/vendor/lib/libgsl.so \
-    vendor/htc/golfu/proprietary/lib/libOpenCL.so:system/vendor/lib/libOpenCL.so \
-    vendor/htc/golfu/proprietary/lib/libOpenVG.so:system/vendor/lib/libOpenVG.so \
-    vendor/htc/golfu/proprietary/lib/libsc-a2xx.so:system/vendor/lib/libsc-a2xx.so \
-    vendor/htc/golfu/proprietary/lib/libC2D2.so:system/vendor/lib/libC2D2.so \
-    vendor/htc/golfu/proprietary/lib/libc2d2_z180.so:system/vendor/lib/libc2d2_z180.so \
-    vendor/htc/golfu/proprietary/lib/libCB.so:system/vendor/lib/libCB.so \
-    vendor/htc/golfu/proprietary/lib/libadreno_utils.so:system/vendor/lib/libadreno_utils.so \
-    vendor/htc/golfu/proprietary/lib/egl/eglsubAndroid.so:system/vendor/lib/egl/eglsubAndroid.so \
-    vendor/htc/golfu/proprietary/lib/egl/libEGL_adreno.so:system/vendor/lib/egl/libEGL_adreno.so \
-    vendor/htc/golfu/proprietary/lib/egl/libGLESv1_CM_adreno.so:system/vendor/lib/egl/libGLESv1_CM_adreno.so \
-    vendor/htc/golfu/proprietary/lib/egl/libGLESv2_adreno.so:system/vendor/lib/egl/libGLESv2_adreno.so \
-    vendor/htc/golfu/proprietary/lib/egl/libGLESv2S3D_adreno.so:system/vendor/lib/egl/libGLESv2S3D_adreno.so \
-    vendor/htc/golfu/proprietary/lib/egl/libq3dtools_adreno.so:system/vendor/lib/egl/libq3dtools_adreno.so
+    vendor/htc/golfu/proprietary/vendor/lib/egl/eglsubAndroid.so:system/vendor/lib/egl/eglsubAndroid.so \
+    vendor/htc/golfu/proprietary/vendor/lib/egl/libEGL_adreno.so:system/vendor/lib/egl/libEGL_adreno.so \
+    vendor/htc/golfu/proprietary/vendor/lib/egl/libGLESv1_CM_adreno.so:system/vendor/lib/egl/libGLESv1_CM_adreno.so \
+    vendor/htc/golfu/proprietary/vendor/lib/egl/libGLESv2_adreno.so:system/vendor/lib/egl/libGLESv2_adreno.so \
+    vendor/htc/golfu/proprietary/vendor/lib/egl/libGLESv2S3D_adreno.so:system/vendor/lib/egl/libGLESv2S3D_adreno.so \
+    vendor/htc/golfu/proprietary/vendor/lib/egl/libq3dtools_adreno.so:system/vendor/lib/egl/libq3dtools_adreno.so \
+    vendor/htc/golfu/proprietary/vendor/lib/libadreno_utils.so:system/vendor/lib/libadreno_utils.so \
+    vendor/htc/golfu/proprietary/vendor/lib/libC2D2.so:system/vendor/lib/libC2D2.so \
+    vendor/htc/golfu/proprietary/vendor/lib/libCB.so:system/vendor/lib/libCB.so \
+    vendor/htc/golfu/proprietary/vendor/lib/libgsl.so:system/vendor/lib/libgsl.so \
+    vendor/htc/golfu/proprietary/vendor/lib/libOpenCL.so:system/vendor/lib/libOpenCL.so \
+    vendor/htc/golfu/proprietary/vendor/lib/libOpenVG.so:system/vendor/lib/libOpenVG.so \
+    vendor/htc/golfu/proprietary/vendor/lib/libsc-a2xx.so:system/vendor/lib/libsc-a2xx.so
 
 # RIL
 PRODUCT_COPY_FILES += \
