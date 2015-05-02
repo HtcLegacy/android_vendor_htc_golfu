@@ -19,8 +19,13 @@ PRODUCT_COPY_FILES += \
     vendor/htc/golfu/proprietary/lib/libmm-adspsvc.so:system/lib/libmm-adspsvc.so \
     vendor/htc/golfu/proprietary/lib/libmmosal.so:system/lib/libmmosal.so \
     vendor/htc/golfu/proprietary/lib/libmmparser.so:system/lib/libmmparser.so \
-    vendor/htc/golfu/proprietary/omx/libI420colorconvert.so:system/lib/libI420colorconvert.so \
+    vendor/htc/golfu/proprietary/omx/libOmxH264Dec.so:system/lib/libOmxH264Dec.so \
+    vendor/htc/golfu/proprietary/omx/libOmxMpeg4Dec.so:system/lib/libOmxMpeg4Dec.so \
+    vendor/htc/golfu/proprietary/omx/libOmxVidEnc.so:system/lib/libOmxVidEnc.so \
+    vendor/htc/golfu/proprietary/omx/libmmparser_divxdrmlib.so:system/lib/libmmparser_divxdrmlib.so \
+    vendor/htc/golfu/proprietary/omx/libdivxdrmdecrypt.so:system/lib/libdivxdrmdecrypt.so \
     vendor/htc/golfu/proprietary/omx/libOmxAacDec.so:system/lib/libOmxAacDec.so \
+    vendor/htc/golfu/proprietary/omx/libOmxAacEnc.so:system/lib/libOmxAacEnc.so \
     vendor/htc/golfu/proprietary/omx/libOmxAc3HwDec.so:system/lib/libOmxAc3HwDec.so \
     vendor/htc/golfu/proprietary/omx/libOmxAdpcmDec.so:system/lib/libOmxAdpcmDec.so \
     vendor/htc/golfu/proprietary/omx/libOmxAmrDec.so:system/lib/libOmxAmrDec.so \
@@ -30,17 +35,11 @@ PRODUCT_COPY_FILES += \
     vendor/htc/golfu/proprietary/omx/libOmxEvrcDec.so:system/lib/libOmxEvrcDec.so \
     vendor/htc/golfu/proprietary/omx/libOmxEvrcEnc.so:system/lib/libOmxEvrcEnc.so \
     vendor/htc/golfu/proprietary/omx/libOmxEvrcHwDec.so:system/lib/libOmxEvrcHwDec.so \
-    vendor/htc/golfu/proprietary/omx/libOmxH264Dec.so:system/lib/libOmxH264Dec.so \
-    vendor/htc/golfu/proprietary/omx/libOmxMpeg4Dec.so:system/lib/libOmxMpeg4Dec.so \
-    vendor/htc/golfu/proprietary/omx/libOmxOn2Dec.so:system/lib/libOmxOn2Dec.so \
+    vendor/htc/golfu/proprietary/omx/libOmxMp3Dec.so:system/lib/libOmxMp3Dec.so \
     vendor/htc/golfu/proprietary/omx/libOmxQcelp13Dec.so:system/lib/libOmxQcelp13Dec.so \
     vendor/htc/golfu/proprietary/omx/libOmxQcelp13Enc.so:system/lib/libOmxQcelp13Enc.so \
     vendor/htc/golfu/proprietary/omx/libOmxQcelpHwDec.so:system/lib/libOmxQcelpHwDec.so \
-    vendor/htc/golfu/proprietary/omx/libOmxrv9Dec.so:system/lib/libOmxrv9Dec.so \
-    vendor/htc/golfu/proprietary/omx/libOmxVidEnc.so:system/lib/libOmxVidEnc.so \
-    vendor/htc/golfu/proprietary/omx/libOmxVp8Dec.so:system/lib/libOmxVp8Dec.so \
-    vendor/htc/golfu/proprietary/omx/libOmxWmaDec.so:system/lib/libOmxWmaDec.so \
-    vendor/htc/golfu/proprietary/omx/libOmxWmvDec.so:system/lib/libOmxWmvDec.so
+    vendor/htc/golfu/proprietary/omx/libOmxWmaDec.so:system/lib/libOmxWmaDec.so
 
 # DRM Plugin
 PRODUCT_COPY_FILES += \
